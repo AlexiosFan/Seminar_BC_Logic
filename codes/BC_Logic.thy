@@ -189,6 +189,8 @@ lemma T_fold_linear:
 "\<exists>a b. valid proc \<longrightarrow> T_fold proc \<le> a * (sz proc) + b"
 using T_fold_sz nd_lf_sz_sound le_add2 by blast
 
+section \<open>A summary of evaluation of the BC-logic terms 
+and the folding process of the protocols\<close>
 
 fun eval_proc :: "proc_trie => string" where
 "eval_proc proc = eval (fold proc)"
